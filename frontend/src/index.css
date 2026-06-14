@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-600 bg-[#f4f7fc] font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply tracking-tight text-[#002060];
+  }
+}
+
+/* selection override */
+::selection {
+  background-color: #0099ff; /* electric blue */
+  color: #ffffff;
+}
+
+/* Utility cards */
+.premium-card {
+  @apply bg-white border border-slate-200/60 rounded-2xl shadow-sm hover:shadow-md hover:border-brand-500/20 transition-all duration-300;
+}
+
+.premium-card-dark {
+  @apply bg-[#002060] border border-brand-500/20 text-white rounded-2xl shadow-lg shadow-blue-900/15;
+}
+
+/* Fallback class for font-display to handle hot-reloading configurations */
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Scrollbar matching light theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom background glows - optimized for light theme */
+.glow-blur {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(120px);
+  opacity: 0.07;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+.glow-primary {
+  background: radial-gradient(circle, #0099ff 0%, transparent 70%);
+}
+
+.glow-secondary {
+  background: radial-gradient(circle, #5c66de 0%, transparent 70%);
+}
+
