@@ -24,7 +24,7 @@ const Contact = () => {
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
     { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/shorelume-tech-a52b8a412?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
     { name: 'Twitter/X', icon: Twitter, href: 'https://twitter.com' }
   ];
 
